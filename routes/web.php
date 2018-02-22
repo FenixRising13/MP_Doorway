@@ -11,18 +11,29 @@
 |
 */
 
+// Home Route
 Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/properties', function () {
+// Properties Blade
+Route::get('/properties', function (){
     return view('properties');
 });
 
+// PropertiesController
+// Route::resource('/properties', "PropertiesController");
+
+// About Blade
 Route::get('/about', function () {
     return view('about');
 });
 
+// Forms Blade
 Route::get('/forms', function () {
     return view('forms');
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

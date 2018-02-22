@@ -31,6 +31,11 @@
         main {
             flex: 1 0 auto;
         }
+
+        #submit {
+            background-color:grey;
+        }
+
         footer {
             background-color: black;
             color: white;
