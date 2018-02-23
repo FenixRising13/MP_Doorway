@@ -24,6 +24,7 @@
             min-height: 100vh;
             flex-direction: column;
         }
+        
         .address {
             color:black;
         }

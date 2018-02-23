@@ -1,4 +1,4 @@
-@extends ('layouts.main') 
+@extends ('layouts.app') 
 @section('content')
 <div class='container'>
     <br>
@@ -29,7 +29,7 @@
                     </div>
                 </div>
                 <div class="card-action">
-                    <a href="#">This is a link</a>
+                    <a href="https://www.google.com/maps/place/121+Stefanik+Rd,+Winter+Park,+FL+32792/@28.6246605,-81.3080292,17z/data=!3m1!4b1!4m5!3m4!1s0x88e76fad723db31d:0x518cf80b3c14367a!8m2!3d28.6246558!4d-81.3058352">See on Google Maps</a>
                 </div>
             </div>
         </div>
