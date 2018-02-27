@@ -2,7 +2,7 @@
 
 use Illuminate\Database\Seeder;
 
-class DatabaseSeeder extends Seeder
+class UsersTableSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -11,7 +11,6 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // This is commented out in new Laravel projects.
-        $this->call(UsersTableSeeder::class);
+        factory(App\User::class, 5)->create();
     }
 }

@@ -1,0 +1,23 @@
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+  }
+
+  main {
+    flex: 1 0 auto;
+  }
+
+  .list-group {
+    border: 2px solid black;
+    padding: 10px;
+  }
+
+  footer {
+      height: 50px;
+      padding-top: 15px;
+      background: black;
+      color: white;
+      text-align: center;
+  }
+      

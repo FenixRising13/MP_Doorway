@@ -15,9 +15,22 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/property', function () {
-    return view('property');
-});
+// Route::get('/properties', function () {
+//     return view('property');
+// });
+
+// Route::get('/repairs', function () {
+//     return view('repair');
+// });
+Route::resource('/users',"UsersController");
+
+Route::resource('/properties',"PropertiesController");
+
+Route::resource('/repairs',"RepairsController");
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
 
 Auth::routes();
 

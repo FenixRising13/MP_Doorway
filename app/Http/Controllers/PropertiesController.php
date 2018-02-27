@@ -4,7 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-class RepairController extends Controller
+use App\Property;
+
+class PropertiesController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -13,7 +15,8 @@ class RepairController extends Controller
      */
     public function index()
     {
-        //
+        $properties = Property::all();
+        return view('properties.index',compact('properties'));
     }
 
     /**
@@ -45,7 +48,7 @@ class RepairController extends Controller
      */
     public function show($id)
     {
-        //
+        return view('properties.show')->withProperty(Property::find($id));
     }
 
     /**
