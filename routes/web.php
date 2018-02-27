@@ -15,13 +15,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-// Route::get('/properties', function () {
-//     return view('property');
-// });
-
-// Route::get('/repairs', function () {
-//     return view('repair');
-// });
 Route::resource('/users',"UsersController");
 
 Route::resource('/properties',"PropertiesController");

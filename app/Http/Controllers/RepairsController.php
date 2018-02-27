@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use App\Repairs;
+use App\Repair;
 
 class RepairsController extends Controller
 {
@@ -15,7 +15,8 @@ class RepairsController extends Controller
      */
     public function index()
     {
-        $repairs = Repairs::all();
+        $repairs = Repair::all();
+        return view('repairs.index',compact('repairs'));
     }
 
     /**

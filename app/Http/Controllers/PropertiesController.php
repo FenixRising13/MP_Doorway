@@ -59,7 +59,9 @@ class PropertiesController extends Controller
      */
     public function edit($id)
     {
-        //
+        {
+        return view('properties.edit')->withProperty(Property::find($id));
+        }
     }
 
     /**
@@ -71,7 +73,13 @@ class PropertiesController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $property = Property::find($id);
+        if (strlen($property->rent)!==0){
+            $property->rent = $request->rent;
+        }
+        
+        $property->save();
+        return redirect()->action('PropertiesController@show',[$id]); 
     }
 
     /**

@@ -17,8 +17,9 @@ class CreateRepairsTable extends Migration
             $table->increments('id');
             $table->integer("property_id")->unsigned();
             $table->foreign("property_id")->references('id')->on('properties');
-            $table->boolean("completed");
-            $table->date("completed_date");
+            $table->string("description");
+            $table->boolean("completed")->nullable();
+            $table->date("completed_at")->nullable();
             $table->integer("contractor")->unsigned();
             $table->foreign("contractor")->references('id')->on('users');
             $table->timestamps();

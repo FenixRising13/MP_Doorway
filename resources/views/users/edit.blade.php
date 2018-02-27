@@ -1,7 +1,7 @@
 @extends ('layouts/app') 
 @section ('content')
 <div class='container'>
-    <h3>Editing: {{$user->name}}</h3>
+    <h2>Editing: {{$user->name}}</h2>
     <hr>
     <form method="post" action="/users/{{$user->id}}">
         {{ csrf_field() }} {{ method_field('PATCH') }}
