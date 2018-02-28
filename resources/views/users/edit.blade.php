@@ -1,7 +1,14 @@
 @extends ('layouts/app') 
 @section ('content')
 <div class='container'>
-    <h2>Editing: {{$user->name}}</h2>
+    <h2 style='font-style:italic'>Editing: {{$user->name}}</h2>
+    <hr>
+    <div class='description'>
+        <b>Name:</b> {{$user->name}}<br>
+        <b>Title:</b> {{$user->title}}<br>
+        <b>Email:</b> {{$user->email}}<br>
+        <b>Phone:</b> {{$user->phone}}<br>
+    </div>
     <hr>
     <form method="post" action="/users/{{$user->id}}">
         {{ csrf_field() }} {{ method_field('PATCH') }}
@@ -14,20 +21,17 @@
             <label for="email" data-error="wrong" data-success="right"></label>
         </div>
         <div class="input-field col s12">
-            <input name="property" type="text" id="property" class="validate" placeholder="New Property ID"></textarea>
-            <label for="property"></label>
+            <input name="title" type="text" id="title" class="validate" placeholder="New Title">
+            <label for="title"></label>
+        </div>
+        <div class="input-field col s12">
+            <input name="phone" type="text" id="phone" class="validate" placeholder="New Phone">
+            <label for="phone"></label>
         </div>
         <button class='btn grey' id=submit>
             Submit
           </button>
     </form>
     <hr>
-    {{--  <form method=‘POST’ action=“/users/{{$user->id}}“>
-        {{ csrf_field() }}
-        {{ method_field('DELETE') }}
-        <div class="input-field col s12">
-        <button class=“btn red” onclick=“return confirm(‘Are you sure to delete user?’)“>Delete
-        </button>
-    </form>  --}}
 </div>
 @endsection

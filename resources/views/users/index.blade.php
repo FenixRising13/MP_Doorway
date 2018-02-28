@@ -6,7 +6,7 @@
     <ul class="list-group">
         @foreach ( $users as $user )
         <li class="list-item">
-            Name: <a href="/users/{{$user->id}}" class="link">{{$user->name}}</a>
+            Name: <a href="/users/{{$user->id}}" class="link">{{$user->name}}</a> Title: {{$user->title}}
         </li>
         @endforeach
     </ul>

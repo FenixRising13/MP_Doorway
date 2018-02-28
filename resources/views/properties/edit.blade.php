@@ -19,6 +19,10 @@
     <form method="post" action="/properties/{{$property->id}}">
         {{ csrf_field() }} {{ method_field('PATCH') }}
         <div class="input-field col s12">
+            <input name="tenant" type="text" id="tenant" class="validate" placeholder="Update Tenant"></textarea>
+            <label for="tenant"></label>
+        </div>
+        <div class="input-field col s12">
             <input name="rent" type="text" id="rent" class="validate" placeholder="Update Rent"></textarea>
             <label for="rent"></label>
         </div>

@@ -74,10 +74,12 @@ class PropertiesController extends Controller
     public function update(Request $request, $id)
     {
         $property = Property::find($id);
+        if (strlen($property->tenant)!==0){
+            $property->tenant = $request->tenant;
+        }
         if (strlen($property->rent)!==0){
             $property->rent = $request->rent;
         }
-        
         $property->save();
         return redirect()->action('PropertiesController@show',[$id]); 
     }

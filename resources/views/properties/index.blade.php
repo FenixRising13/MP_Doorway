@@ -7,7 +7,7 @@
     <div class="card grey">
         <div class="card-content white-text">
             <span class="card-title"></span>
-            <h5><a href="/properties/{{$property->id}}" class="link">{{$property->addr}}</a></h5>
+            <a href="/properties/{{$property->id}}" class="link">{{$property->addr}}</a>
         </div>
     </div>
     @endforeach

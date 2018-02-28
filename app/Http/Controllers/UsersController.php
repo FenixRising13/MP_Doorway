@@ -77,8 +77,14 @@ class UsersController extends Controller
         if (strlen($request->name)!==0){
             $user->name = $request->name;
         }
-        if (strlen($request->name)!==0){
+        if (strlen($request->email)!==0){
             $user->email = $request->email;
+        }
+        if (strlen($request->title)!==0){
+            $user->title = $request->title;
+        }
+        if (strlen($request->phone)!==0){
+            $user->phone = $request->phone;
         }
         $user->save();
         return redirect()->action('UsersController@show',[$id]); 
@@ -92,10 +98,6 @@ class UsersController extends Controller
      */
     public function destroy($id)
     {
-        $user = User::find($id);
        
-       $user->destroy($id);
-       // $message=$request->session()->flash(‘message’, ‘Successfully deleted the user!’);
-       return redirect()->action('UsersController@index');
     }
 }

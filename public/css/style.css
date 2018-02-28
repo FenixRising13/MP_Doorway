@@ -4,9 +4,13 @@ body {
     flex-direction: column;
   }
 
-.navbar-brand {
-  font-size: 25px;
-}
+  h2 {
+    text-shadow: 1px 1px;
+  }
+
+  .navbar-brand {
+    font-size: 30px;
+  }
 
   main {
     flex: 1 0 auto;
@@ -29,12 +33,16 @@ body {
     text-align: center;
   }
 
-.card {
+  .card {
     border: 1px solid black;
-}
+  }
 
   .link {
     color: black;
-    font-size: 16px;
+    font-size: 18px;
+    font-weight:bold;
   }
-      
+
+  #description {
+    font-size:16px;
+  }

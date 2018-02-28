@@ -26,7 +26,7 @@ class RepairsController extends Controller
      */
     public function create()
     {
-        //
+        return view('repairs.create',compact('repairs'));
     }
 
     /**
@@ -37,7 +37,11 @@ class RepairsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $repair = Repair::find($id);
+
+        // show the view and pass the nerd to it
+        return view('RepairsController@index')
+            ->with('repair', $repair);
     }
 
     /**
@@ -48,7 +52,7 @@ class RepairsController extends Controller
      */
     public function show($id)
     {
-        //
+        return view('repairs.show')->withRepair(Repair::find($id));
     }
 
     /**
@@ -59,7 +63,7 @@ class RepairsController extends Controller
      */
     public function edit($id)
     {
-        //
+        return view('repairs.edit')->withRepair(Repair::find($id));
     }
 
     /**
@@ -71,7 +75,13 @@ class RepairsController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $repair = Repair::find($id);
+        if (strlen($request->description)!==0){
+            $repair->description = $request->description;
+        }
+        
+        $repair->save();
+        return redirect()->action('RepairsController@show',[$id]); 
     }
 
     /**
@@ -82,6 +92,13 @@ class RepairsController extends Controller
      */
     public function destroy($id)
     {
-        //
+        {
+            $repair = Repair::findOrFail($id);
+        
+            $repair->delete();
+        
+            return redirect()->action('RepairsController@index'); 
+        }
+        
     }
 }
