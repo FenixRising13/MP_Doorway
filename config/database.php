@@ -43,10 +43,10 @@ return [
         // Original MySQL Connection
         'mysql' => [
             'driver' => 'mysql',
-            'host' => env('DB_HOST', '127.0.0.1'),
+            'host' => env('DB_HOST', 'erxv1bzckceve5lh.cbetxkdyhwsb.us-east-1.rds.amazonaws.com'),
             'port' => env('DB_PORT', '3306'),
-            'database' => env('DB_DATABASE', 'forge'),
-            'username' => env('DB_USERNAME', 'forge'),
+            'database' => env('DB_DATABASE', 'xcukw1fwsblh2o8y'),
+            'username' => env('DB_USERNAME', 'fcbhnlx7aq9nssb3'),
             'password' => env('DB_PASSWORD', ''),
             'unix_socket' => env('DB_SOCKET', ''),
             'charset' => 'utf8mb4',
