@@ -1,5 +1,6 @@
-@extends ('layouts/app') 
+@extends ('layouts.app') 
 @section ('content')
+
 <div class='container'>
     <h2>{{$user->name}}</h2>
     <hr>
@@ -14,4 +15,5 @@
         Edit User
     </button>
 </div>
+
 @endsection

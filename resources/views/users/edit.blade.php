@@ -1,5 +1,6 @@
-@extends ('layouts/app') 
+@extends ('layouts.app') 
 @section ('content')
+
 <div class='container'>
     <h2 style='font-style:italic'>Editing: {{$user->name}}</h2>
     <hr>
@@ -34,4 +35,5 @@
     </form>
     <hr>
 </div>
+
 @endsection

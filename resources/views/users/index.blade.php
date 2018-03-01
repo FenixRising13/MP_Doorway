@@ -10,5 +10,9 @@
         </li>
         @endforeach
     </ul>
+    <br><br>
+    <button class='btn grey' onclick="location.href = '/users/create';">
+        Create User
+    </button>
 </div>
 @endsection
