@@ -63,7 +63,7 @@
     <main class="py-4">
         @yield('content')
     </main>
-    <footer>
+    <footer onclick="href = 'http://markpowalisz.com';">
         © Copyright 2018 MP Doorway
     </footer>
     </div>
