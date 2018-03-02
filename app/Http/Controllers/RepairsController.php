@@ -16,12 +16,6 @@ class RepairsController extends Controller
      */
     public function index()
     {
-//
-        $repairs = DB::table('repairs')
-            ->join('users', 'repairs.id', '=', 'users.id')
-            ->all()
-            ->get();
-//
         $repairs = Repair::all();
         return view('repairs.index',compact('repairs'));
     }
