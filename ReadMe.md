@@ -13,16 +13,14 @@
 ### Tables
 
   * Users (1-20 records)
-    * Fname
-    * Lname
+    * Name
     * Username
     * Password
-    * Role/Type - Manager / Tenant / Handyman(Contractor)
+    * Title - Manager / Tenant / Handyman(Contractor)
 
   * Properties (10-100 records)
     * Property ID
-    * T Fname
-    * T Lname
+    * Name
     * Address
     * Address 2 (Second line for suite, etc.)
     * City
@@ -30,24 +28,33 @@
     * Zip
     * Property (Complex) Name
     * Lease Date
+    * Rent
+    * Renter (Boolean)
+    * Grace Period
+
+  * Repairs
+    * Description
+
+  * History
 
 ## Technologies
 * MySQL - https://www.mysql.com/
 * PHP
 * Laravel
-* NodeJS - https://nodejs.org/
 * MaterializeCSS - http://materializecss.com/
-* Express NPM - https://www.npmjs.com/package/express
 
 ## Pages
 
-* Login
-* Create Login
-* Property List
-* Add/Update Property
+* Users (CRUD)
+* Properties (CRUD)
+* Repairs (CRUD)
+* Forms
+* Rental History
 
-## APIs
-Google Maps API
+<!-- ## APIs
+Google Maps API -->
+
+![MP Doorway](/mpdoorway.gif)
 
 ## Author
 Mark Powalisz
