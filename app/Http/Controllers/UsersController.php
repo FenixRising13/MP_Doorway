@@ -85,8 +85,11 @@ class UsersController extends Controller
         }
         if (strlen($request->phone)!==0){
             $user->phone = $request->phone;
+            $history->description = "Updated User";
         }
         $user->save();
+        // Save history with updated_at
+        $history->save();
         return redirect()->action('UsersController@show',[$id]); 
     }
 
