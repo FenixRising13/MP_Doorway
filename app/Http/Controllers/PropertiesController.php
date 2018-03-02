@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Property;
+use App\History;
 
 class PropertiesController extends Controller
 {

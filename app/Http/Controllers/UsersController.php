@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 // Require the class
 use App\User;
+use App\History;
 
 class UsersController extends Controller
 {
