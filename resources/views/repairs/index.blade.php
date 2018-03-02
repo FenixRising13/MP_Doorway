@@ -4,16 +4,16 @@
     <h2>Repairs</h2>
     <hr>
     <h3>Incomplete</h3>
-    <hr> @foreach ( $repairs as $repair)
+    <hr> @foreach ( $incomplete as $repair2)
     <ul class="list-group">
         <li class="list-item">
-            Property: <a href="/repairs/{{$repair->id}}" class="link">{{$repair->property_id}}</a>
+            Property: <a href="/repairs/{{$repair2->id}}" class="link">{{$repair2->property_id}}</a>
         </li>
         <li class="list-item">
-            Description: {{$repair->description}}
+            Description: {{$repair2->description}}
         </li>
         <li class="list-item">
-            Created: {{$repair->created_at}}
+            Created: {{$repair2->created_at}}
         </li>
     </ul>
     @endforeach
