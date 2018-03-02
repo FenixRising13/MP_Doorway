@@ -17,8 +17,8 @@ class RepairsController extends Controller
     public function index()
     {
         
-        $incomplete = Repair::all()->where("completed",0);
-        $complete = Repair::all()->where("completed",1);
+        $repair = Repair::all()->where("completed",0);
+        
         return view('repairs.index',compact('repairs'));
     }
 
