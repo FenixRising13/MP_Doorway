@@ -18,8 +18,10 @@ class RepairsController extends Controller
     {
         
         $repairs = Repair::all()->where("completed",0);
+        $completed = Repair::all()->where("completed",1);
         
         return view('repairs.index',compact('repairs'));
+        return view('repairs.index',compact('completed'));
     }
 
     /**
