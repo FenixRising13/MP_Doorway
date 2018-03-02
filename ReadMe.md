@@ -54,7 +54,7 @@
 <!-- ## APIs
 Google Maps API -->
 
-![MP Doorway](/mpdoorway.gif)
+![MP Doorway](mpdoorway.gif)
 
 ## Author
 Mark Powalisz
