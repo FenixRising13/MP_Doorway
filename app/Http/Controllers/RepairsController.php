@@ -5,7 +5,6 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Repair;
-Use App\History;
 
 class RepairsController extends Controller
 {
