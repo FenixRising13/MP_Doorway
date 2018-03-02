@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\DB;
+// use Illuminate\Support\Facades\DB;
 
 use App\Repair;
 
@@ -16,7 +16,8 @@ class RepairsController extends Controller
      */
     public function index()
     {
-        $repairs = Repair::all();
+        
+        $repairs = Repair::all()->where("completed",1);
         return view('repairs.index',compact('repairs'));
     }
 
