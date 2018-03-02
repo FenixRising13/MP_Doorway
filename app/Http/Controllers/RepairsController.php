@@ -37,11 +37,13 @@ class RepairsController extends Controller
      */
     public function store(Request $request)
     {
-        $repair = Repair::find($id);
+        if ($request->property_id!==0){
+            $repair->property_id = $request->property_id;
+            $repair->description = $repair->description;
 
-        // show the view and pass the nerd to it
-        return view('RepairsController@index')
-            ->with('repair', $repair);
+            $repair->save();
+        }
+        return redirect()->action('RepairsController@index');
     }
 
     /**
@@ -76,6 +78,11 @@ class RepairsController extends Controller
     public function update(Request $request, $id)
     {
         $repair = Repair::find($id);
+        
+        if (strlen($request->property_id)!==0){
+        $repair->property_id = $request->property_id;
+        }
+        
         if (strlen($request->description)!==0){
             $repair->description = $request->description;
         }
