@@ -4,7 +4,7 @@
     <h2>Repairs</h2>
     <hr>
     <h3>Incomplete</h3>
-    <hr> @foreach ( $repairs as $repair)
+    <hr> @foreach ( $incomplete as $incomplete)
     <ul class="list-group">
         <li class="list-item">
             Property: <a href="/repairs/{{$repair->id}}" class="link">{{$repair->property_id}}</a>
@@ -19,7 +19,7 @@
     @endforeach
     <br>
     <h3>Complete</h3>
-    <hr> @foreach ( $repairs as $repair)
+    <hr> @foreach ( $complete as $complete)
     <ul class="list-group">
         <li class="list-item">
             Property: <a href="/repairs/{{$repair->id}}" class="link">{{$repair->property_id}}</a>
