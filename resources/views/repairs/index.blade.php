@@ -6,7 +6,7 @@
     <h3>Incomplete</h3>
     <hr> @foreach ( $incomplete as $repair1)
 
-    {{$property_id = Property::find($id)->$id;}}
+    {{$property_id = Repair::find()->$property_id;}}
 
     <ul class="list-group">
         <li class="list-item">
