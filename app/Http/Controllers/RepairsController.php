@@ -39,6 +39,7 @@ class RepairsController extends Controller
      */
     public function store(Request $request)
     {
+
         if ($request->property_id!==0){
             $repair->property_id = $request->property_id;
             $repair->description = $repair->description;
