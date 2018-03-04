@@ -5,9 +5,6 @@
     <hr>
     <h3>Incomplete</h3>
     <hr> @foreach ( $incomplete as $repair1)
-
-    {{$property_id = Repair::find()->$property_id;}}
-
     <ul class="list-group">
         <li class="list-item">
             Property: <a href="/repairs/{{$repair1->id}}" class="link">{{$repair1->property_id}}</a>
