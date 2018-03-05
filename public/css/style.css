@@ -46,3 +46,7 @@ body {
   #description {
     font-size:16px;
   }
+
+  .form {
+    text-align: justify;
+  }
