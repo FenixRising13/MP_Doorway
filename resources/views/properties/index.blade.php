@@ -4,12 +4,11 @@
     <h2>Properties</h2>
     <hr>
     @foreach ( $properties as $property )
-    <div class="card grey">
-        <div class="card-content white-text">
-            <span class="card-title"></span>
+    <ul class="collection">
+        <li class="collection-item">
             <a href="/properties/{{$property->id}}" class="link">{{$property->addr}}</a>
-        </div>
-    </div>
+        </li>
+    </ul>
     @endforeach
 </div>
 @endsection
