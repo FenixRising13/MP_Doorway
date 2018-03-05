@@ -3,6 +3,12 @@
 <div class="container">
     <h2>Repairs</h2>
     <hr>
+    <h3>Users</h3>
+    @foreach ( $CurrentUser as $user )
+    <ul>
+        <li>{{$user->name}}</li>
+    </ul>
+    @endforeach
     <h3>Incomplete</h3>
     <hr> @foreach ( $incomplete as $incomplete)
     <ul class="list-group">
@@ -38,7 +44,6 @@
             Completed By: {{$repair->contractor}}
         </li>
     </ul>
-    
     @endforeach
     <br>
     <button class="waves-effect waves-light grey btn" onclick="location.href = '/repairs/create';">
