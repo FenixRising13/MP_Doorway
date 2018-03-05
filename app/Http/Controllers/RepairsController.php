@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 // use Illuminate\Support\Facades\DB;
 
 use App\Repair;
-use App\User;
+use Auth;
 
 class RepairsController extends Controller
 {
