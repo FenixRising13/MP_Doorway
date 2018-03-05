@@ -12,7 +12,6 @@
     <h3>Incomplete</h3>
     <hr> @foreach ( $incomplete as $incomplete)
     <ul class="list-group">
-        {{$CurrentUser}}
         <li class="list-item">
             Property: <a href="/repairs/{{$incomplete->id}}" class="link">{{$incomplete->property_id}}</a>
         </li>
@@ -26,6 +25,7 @@
     @endforeach
     <br>
     <h3>Complete</h3>
+    {{--  For Each for completed repairs  --}}
     <hr> @foreach ( $repairs as $repair)
     <ul class="list-group">
         <li class="list-item">

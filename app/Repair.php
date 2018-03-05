@@ -10,4 +10,9 @@ class Repair extends Model
     {
         return $this->hasOne('App\Property');
     }
+
+    public function user()
+    {
+        return $this->belongsTo('App\User');
+    }
 }
