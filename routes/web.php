@@ -28,3 +28,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/forms', function () {
   return view('forms');
 });
+
+Route::get('/laterent', function () {
+  return view('laterent');
+});
