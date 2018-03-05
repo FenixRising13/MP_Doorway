@@ -29,6 +29,6 @@ class User extends Authenticatable
 
     public function properties()
     {
-    return $this->belongsTo('App/Property', 'property_id');
+    return $this->belongsTo('App/Property', 'property_id')->withDefault();
     }
 }

@@ -11,7 +11,7 @@ class Property extends Model
 
     public function tenant()
     {
-        return $this->hasMany('App\User', 'property_id');
+        return $this->hasMany('App\User', 'property_id')->withDefault();
     }
 
     public function repair()
