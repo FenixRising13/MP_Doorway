@@ -13,8 +13,8 @@
             <input type="text" id="property_id" class="validate">
             <label for="property_id">Property</label>
         </div>
-        <div class="input-field col s12">
-            <input type="rent" id="rent" class="validate">
+        <div class="input-field col s12 l6">
+            <input type="text" id="rent" class="validate">
             <label for="rent">Rent</label>
         </div>
     </form>
