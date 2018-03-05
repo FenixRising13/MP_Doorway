@@ -30,10 +30,10 @@ class User extends Authenticatable
 
 use Illuminate\Database\Eloquent\Model;
 
-class User extends Model
-{
-    public function properties()
-    {
-    return $this->belongsTo('App/Property');
-    }
-}
+// class User extends Model
+// {
+//     public function properties()
+//     {
+//     return $this->belongsTo('App/Property');
+//     }
+// }
