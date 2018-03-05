@@ -10,4 +10,9 @@ class Property extends Model
     {
         return $this->hasMany('App\User');
     }
+
+    public function repair()
+    {
+        return $this->hasMany('App\Repair');
+    }
 }
