@@ -1,6 +1,6 @@
 @extends('layouts.app') 
 @section('content')
-<div class="container-">
+<div class="container">
     <div class="form">
         <h3>LEASE EXPIRATION/VACATING TENANT LETTER</h3>
         <br>
