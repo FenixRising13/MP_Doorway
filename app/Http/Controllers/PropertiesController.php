@@ -57,17 +57,13 @@ class PropertiesController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param  int  $property_id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit($property_id)
     {
         {
-        //
-        $tenant = properties()->user('name');
-        $user = User::find($tenant);
-        //
-        return view('properties.edit')->withProperty(Property::find($id));
+        return view('properties.edit')->withProperty(Property::find($property_id));
         }
     }
 
@@ -75,12 +71,12 @@ class PropertiesController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
+     * @param  int  $property_id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update(Request $request, $property_id)
     {
-        $property = Property::find($id);
+        $property = Property::find($property_id);
         if (strlen($property->tenant)!==0){
             $property->tenant = $request->tenant;
         }
@@ -88,7 +84,7 @@ class PropertiesController extends Controller
             $property->rent = $request->rent;
         }
         $property->save();
-        return redirect()->action('PropertiesController@show',[$id]); 
+        return redirect()->action('PropertiesController@show',[$property_id]); 
     }
 
     /**
@@ -97,7 +93,7 @@ class PropertiesController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy($property_id)
     {
         //
     }
