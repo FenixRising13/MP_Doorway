@@ -25,7 +25,7 @@ class RepairsController extends Controller
 
         $repairs = Repair::all()->where("completed",true);
         $incomplete = Repair::all()->where("completed",false);
-        return view('repairs.index',compact('repairs', 'incomplete', 'CurrentUser, Property'));
+        return view('repairs.index',compact('repairs', 'incomplete', 'CurrentUser', 'Property'));
     }
 
     /**
