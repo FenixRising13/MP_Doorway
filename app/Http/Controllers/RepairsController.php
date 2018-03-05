@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 // use Illuminate\Support\Facades\DB;
 
 use App\Repair;
-use Auth;
+use App\User;
 use App\Property;
 
 class RepairsController extends Controller
@@ -20,8 +20,8 @@ class RepairsController extends Controller
     
     {
         // Attempt to access other table
-        $CurrentUser = Auth::all()->name;
-        $Property = Property::all()->addr;
+        $CurrentUser = User::id()->name;
+        $Property = Property::id()->addr;
 
         $repairs = Repair::all()->where("completed",true);
         $incomplete = Repair::all()->where("completed",false);
