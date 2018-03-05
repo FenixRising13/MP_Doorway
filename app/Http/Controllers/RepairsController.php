@@ -19,7 +19,7 @@ class RepairsController extends Controller
     
     {
         
-        $CurrentUser = Auth::user()->name;
+        // $CurrentUser = Auth::user()->name;
         $repairs = Repair::all()->where("completed",true);
         $incomplete = Repair::all()->where("completed",false);
         return view('repairs.index',compact('repairs', 'incomplete'));
