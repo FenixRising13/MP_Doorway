@@ -32,3 +32,20 @@ Route::get('/forms', function () {
 Route::get('/laterent', function () {
   return view('laterent');
 });
+
+Route::get('/leaserenewal', function () {
+  return view('leaserenewal');
+});
+
+Route::get('/changeaddress', function () {
+  return view('changeaddress');
+});
+
+Route::get('/threedaynotice', function () {
+  return view('threedaynotice');
+});
+
+Route::get('/rentalhistory', function () {
+  return view('rentalhistory');
+});
+
