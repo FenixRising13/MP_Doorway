@@ -6,7 +6,7 @@
     @foreach ( $properties as $property )
     <ul class="collection">
         <li class="collection-item">
-            <a href="/properties/{{$property->id}}" class="link">{{$property->addr}}</a>
+            <a href="/properties/{{$property->property_id}}" class="link">{{$property->addr}}</a>
         </li>
     </ul>
     @endforeach
