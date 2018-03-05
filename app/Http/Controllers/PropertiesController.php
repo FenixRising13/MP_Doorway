@@ -48,6 +48,7 @@ class PropertiesController extends Controller
      */
     public function show($id)
     {
+        $user = User::tenant()->where($property_id, $id);
         return view('properties.show')->withProperty(Property::find($id));
     }
 
