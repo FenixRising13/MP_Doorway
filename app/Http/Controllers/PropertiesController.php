@@ -49,6 +49,7 @@ class PropertiesController extends Controller
      */
     public function show($id)
     {
+        $tenant = tenant()->property_id;
         $property = Property::find($id);
         return view('properties.show')->with('property',$property);
     }
