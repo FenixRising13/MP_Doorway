@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 // use Illuminate\Support\Facades\DB;
 
 use App\Repair;
+use App\User;
 
 class RepairsController extends Controller
 {
@@ -15,7 +16,9 @@ class RepairsController extends Controller
      * @return \Illuminate\Http\Response
      */
     public function index()
+    
     {
+        $CurrentUser = Auth::user()->name;
         $repairs = Repair::all()->where("completed",true);
         $incomplete = Repair::all()->where("completed",false);
         return view('repairs.index',compact('repairs', 'incomplete'));
