@@ -13,13 +13,15 @@
 ### Tables
 
   * Users (1-20 records)
+    * ID
     * Name
     * Username
     * Password
     * Title - Manager / Tenant / Handyman(Contractor)
+    * Property_ID
 
   * Properties (10-100 records)
-    * Property ID
+    * Property_ID
     * Name
     * Address
     * Address 2 (Second line for suite, etc.)
@@ -33,7 +35,11 @@
     * Grace Period
 
   * Repairs
+    * Property_ID
     * Description
+    * Completed
+    * Completed_At
+    * Contractor
 
   * History
 
