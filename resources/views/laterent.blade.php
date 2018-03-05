@@ -2,10 +2,14 @@
 @section('content')
 <div class="container">
     <div class="form">
-{{$property->tenant}}<br>
-{{$property->addr}}<br>
-{{$property->addr2}}<br>
-{{$property->city}}{{$property->state}}{{$property->zip}}
+{{--  {{$property->tenant}}<br>  --}}
+{{--  {{$property->addr}}<br>  --}}
+{{--  {{$property->addr2}}<br>  --}}
+{{--  {{$property->city}}{{$property->state}}{{$property->zip}}  --}}
+<p>___________________</p>
+<p>___________________</p>
+<p>___________________</p>
+<p>___________________</p>
 <br>
 <p>Dear Tenants,</p>
 <br>
