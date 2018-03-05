@@ -10,7 +10,7 @@
     <b>State: </b> {{$property->state}}<br>
     <b>Zip: </b> {{$property->zip}}<br>
     <hr>
-    <b>Tenant: </b> {{$user->property_id}}<br>
+    <b>Tenant: </b><br>
     <b>Lease Date: </b> {{$property->lease_date}}<br>
     <b>Rent: </b> ${{$property->rent}}<br>
     <br>
