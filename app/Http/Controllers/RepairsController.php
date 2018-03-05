@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 
 use App\Repair;
 use Auth;
+use App\Property;
 
 class RepairsController extends Controller
 {
@@ -18,8 +19,10 @@ class RepairsController extends Controller
     public function index()
     
     {
-        
-        // $CurrentUser = Auth::user()->name;
+        // Attempt to access other table
+        $CurrentUser = Auth::user()->name;
+        $Property = Property::id()->addr;
+
         $repairs = Repair::all()->where("completed",true);
         $incomplete = Repair::all()->where("completed",false);
         return view('repairs.index',compact('repairs', 'incomplete'));
