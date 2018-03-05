@@ -9,14 +9,14 @@
         Managed Property "MP" Doorway is your tool for property management. Tenants are stored as users and relationally matched
         to the properties which they occupy.
         <br><br>
-        <ul>
-            <li class="list-item">
+        <ul class="collection">
+            <li class="collection-item">
                 Use Forms to send notices to tenants
             </li>
-            <li class="list-item">
+            <li class="collection-item">
                 Collect and track rent payments
             </li>
-            <li class="list-item">
+            <li class="collection-item">
                 Generate reports for tenant rental history
             </li>
         </ul>
