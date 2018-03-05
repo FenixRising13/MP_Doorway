@@ -9,7 +9,9 @@
         <li>{{$user->name}}</li>
     </ul>
     @endforeach
+    {{--  Incomplete Repairs  --}}
     <h3>Incomplete</h3>
+    {{--  For Each for incomplete repairs  --}}
     <hr> @foreach ( $incomplete as $incomplete)
     <ul class="list-group">
         <li class="list-item">
@@ -24,6 +26,7 @@
     </ul>
     @endforeach
     <br>
+    {{--  Completed Repairs  --}}
     <h3>Complete</h3>
     {{--  For Each for completed repairs  --}}
     <hr> @foreach ( $repairs as $repair)
