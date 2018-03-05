@@ -60,6 +60,10 @@ class PropertiesController extends Controller
     public function edit($id)
     {
         {
+        //
+        $tenant = properties()->user('name');
+        $user = User::find($tenant);
+        //
         return view('properties.edit')->withProperty(Property::find($id));
         }
     }
