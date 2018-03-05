@@ -6,7 +6,7 @@
     <h3>Incomplete</h3>
     <hr> @foreach ( $incomplete as $incomplete)
     <ul class="list-group">
-        {{$CurrentUser}}
+        {{$CurrentUser->name}}
         <li class="list-item">
             Property: <a href="/repairs/{{$incomplete->id}}" class="link">{{$incomplete->property_id}}</a>
         </li>
