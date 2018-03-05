@@ -3,12 +3,6 @@
 <div class="container">
     <h2>Repairs</h2>
     <hr>
-    <h3>Users</h3>
-    @foreach ( $currentuser as $user )
-    <ul>
-        <li>{{$user->name}}</li>
-    </ul>
-    @endforeach
     {{--  Incomplete Repairs  --}}
     <h3>Incomplete</h3>
     {{--  For Each for incomplete repairs  --}}

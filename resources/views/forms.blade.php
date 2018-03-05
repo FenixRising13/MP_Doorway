@@ -1,6 +1,8 @@
 @extends ('layouts.app')
 @section ('content')
 <div class="container">
+  <h2>Forms</h2>
+  <hr>
   <ul class="collection">
     <li class="collection-item"><a href="/threedaynotice" class="link">Three-Day Notice (Pre-Eviction)</a></li>
     <li class="collection-item"><a href="/changeaddress" class="link">Change of Address</a></li>

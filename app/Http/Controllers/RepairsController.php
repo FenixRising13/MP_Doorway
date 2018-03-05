@@ -20,11 +20,11 @@ class RepairsController extends Controller
     
     {
         // Attempt to access other table
-        $currentuser = User::all();
 
+        // From repairs table
         $repairs = Repair::all()->where("completed",true);
         $incomplete = Repair::all()->where("completed",false);
-        return view('repairs.index',compact('repairs', 'incomplete', 'CurrentUser', 'Property'));
+        return view('repairs.index',compact('repairs', 'incomplete'));
     }
 
     /**
