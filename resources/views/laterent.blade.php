@@ -1,11 +1,10 @@
 @extends('layouts.app')
 @section('content')
 <div class="container">
-{{$Date()}}
-{{$property->tenant}}<br>
-{{$property->addr}}<br>
-{{$property->addr2}}<br>
-{{$property->city}}{{$property->state}}{{$property->zip}}
+{{$properties->tenant}}<br>
+{{$properties->addr}}<br>
+{{$properties->addr2}}<br>
+{{$properties->city}}{{$properties->state}}{{$properties->zip}}
 <br>
 <p>Dear Tenants,</p>
 <br>
