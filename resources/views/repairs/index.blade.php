@@ -4,7 +4,7 @@
     <h2>Repairs</h2>
     <hr>
     <h3>Users</h3>
-    @foreach ( $CurrentUser as $user )
+    @foreach ( $currentuser as $user )
     <ul>
         <li>{{$user->name}}</li>
     </ul>

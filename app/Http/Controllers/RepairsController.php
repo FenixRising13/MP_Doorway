@@ -20,8 +20,7 @@ class RepairsController extends Controller
     
     {
         // Attempt to access other table
-        $CurrentUser = User::all();
-        // $Property = Property::all();
+        $currentuser = User::all();
 
         $repairs = Repair::all()->where("completed",true);
         $incomplete = Repair::all()->where("completed",false);
