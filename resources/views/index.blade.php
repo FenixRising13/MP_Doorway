@@ -1,4 +1,4 @@
-@extends ('layouts.app') 
+@extends ('layouts.app')
 @section ('content')
 <div class="container">
     <h2 class="title">
@@ -22,11 +22,12 @@
         </ul>
     </div>
     <br>
+
     <div class="links">
         <a href="/users" class="link">Users (Tenants/Managers/Contractors)</a><br>
         <a href="/properties" class="link">Properties</a><br>
         <a href="/repairs" class="link">Repair Tickets</a><br>
-        <a href="#" class="link">Forms</a><br>
+        <a href="/forms" class="link">Forms</a><br>
         <a href="#" class="link">Log Rents</a><br>
     </div>
 </div>
