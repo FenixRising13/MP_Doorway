@@ -26,14 +26,9 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    public function properties()
+    {
+    return $this->belongsTo('App/Property');
+    }
 }
-
-use Illuminate\Database\Eloquent\Model;
-
-// class User extends Model
-// {
-//     public function properties()
-//     {
-//     return $this->belongsTo('App/Property');
-//     }
-// }
