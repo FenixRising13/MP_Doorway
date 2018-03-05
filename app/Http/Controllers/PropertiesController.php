@@ -47,7 +47,7 @@ class PropertiesController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show($property_id)
     {
         $property = Property::find($property_id);
         return view('properties.show')
