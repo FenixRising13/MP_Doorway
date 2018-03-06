@@ -1,4 +1,5 @@
-@extends('layouts.app') @section('content')
+@extends ('layouts.app')
+@section ('content')
 <div class="container">
     <form method:"POST" action="/history/store">
             {{ csrf_field() }} {{ method_field('PATCH') }}
