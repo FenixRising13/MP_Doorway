@@ -6,7 +6,7 @@
         {{-- Heading --}}
         <h5 style='text-align:center'>Three-Day Notice to Tenant</h5>
         <h5 style='text-align:center'>Demand for Payment or Possession</h5>
-        <b id='statute' style='text-align:center'> Florida Statutes 83.56</b>
+        <h5 id='statute' style='text-align:center, font-weight:bold'> Florida Statutes 83.56</h5>
         <br>
         <p style='text-align:left'>County, Florida</p>
         <p style='text-align:right'>Date</p>
@@ -24,7 +24,7 @@
         <p>Please submit the total amount due to this address:</p>
         Company<br>
         Addr<br>
-        City, State, Zip<br>
+        City, State, Zip<br><br>
         <p>Failure to pay the total amount noted on the above late rent notice may result in further actions being taken, but
             not limited to eviction.</p>
         <br>
