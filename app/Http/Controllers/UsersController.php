@@ -78,13 +78,13 @@ class UsersController extends Controller
         if (strlen($request->name)!==0){
             $user->name = $request->name;
         }
-        if (strlen($request->email)!==0){
+        else if (strlen($request->email)!==0){
             $user->email = $request->email;
         }
-        if (strlen($request->title)!==0){
+        else if (strlen($request->title)!==0){
             $user->title = $request->title;
         }
-        if (strlen($request->phone)!==0){
+        else if (strlen($request->phone)!==0){
             $user->phone = $request->phone;
         }
         $user->save();
