@@ -9,6 +9,7 @@
         <b>Title:</b> {{$user->title}}<br>
         <b>Email:</b> {{$user->email}}<br>
         <b>Phone:</b> {{$user->phone}}<br>
+        <b>Property:</b> {{$user->property_id}}<br>
     </div>
     <hr>
     <form method="post" action="/users/{{$user->id}}">

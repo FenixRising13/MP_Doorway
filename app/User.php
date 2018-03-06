@@ -15,7 +15,7 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password'
+        'name', 'email', 'password', 'title', 'phone', 'property_id'
     ];
 
     /**
@@ -29,6 +29,6 @@ class User extends Authenticatable
 
     public function properties()
     {
-    return $this->belongsTo('App/Property', 'property_id')->withDefault();
+    return $this->belongsTo('App/Property', 'property_id');
     }
 }
