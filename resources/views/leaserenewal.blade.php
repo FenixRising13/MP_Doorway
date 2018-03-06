@@ -4,13 +4,13 @@
 <div class="container">
     <div class="form">
         {{-- Heading --}}
-        <h5>LEASE EXPIRATION/VACATING TENANT LETTER</h5>
+        <h5 style='text-align:center'>LEASE EXPIRATION/VACATING TENANT LETTER</h5>
         <br>
-        <p>Date</p>
+        Date<br>
         <br>
-        <p>Tenant</p>
-        <p>Address</p>
-        <p>City, State, Zip</p>
+        Tenant<br>
+        Address<br>
+        City, State, Zip<br>
         <br>
         <p>Dear Tenant,</p>
         <br>
