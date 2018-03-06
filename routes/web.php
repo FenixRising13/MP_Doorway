@@ -23,7 +23,7 @@ Route::resource('/repairs',"RepairsController");
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/dashboard', 'DashboardController@index');
 
 
 // Form Routes
@@ -50,4 +50,3 @@ Route::get('/threedaynotice', function () {
 Route::get('/rentalhistory', function () {
   return view('rentalhistory');
 });
-
