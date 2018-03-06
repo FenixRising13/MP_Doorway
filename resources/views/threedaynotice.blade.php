@@ -6,7 +6,7 @@
         {{-- Heading --}}
         <h5 style='text-align:center'>Three-Day Notice to Tenant</h5>
         <h5 style='text-align:center'>Demand for Payment or Possession</h5>
-        <h5 id='statute' style='text-align:center, font-weight:bold'> Florida Statutes 83.56</h5>
+        <h5 id='statute' style='text-align:center;font-weight:bold;'> Florida Statutes 83.56</h5>
         <br>
         <p style='text-align:left'>County, Florida</p>
         <p style='text-align:right'>Date</p>
