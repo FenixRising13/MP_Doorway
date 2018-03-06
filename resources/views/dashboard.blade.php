@@ -15,7 +15,7 @@
                     @endif
 
                     You are logged in!
-                    <a href="/" class='btn btn-grey'>Go Home</a>
+                    <a href="/" class="waves-effect waves-light grey btn">Go Home</a>
                 </div>
             </div>
         </div>
