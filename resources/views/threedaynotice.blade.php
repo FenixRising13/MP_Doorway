@@ -32,6 +32,7 @@
         <p>Landlord</p>
         <br> I hereby certify that a copy of the following Notice was served upon the above named tenant(s) at the above
         address on the following date: (month/day/year) ________________________________ by the following means:
+        <br>
         <br> ( ) Certified Mail - Return Receipt Requested
         <br> ( ) Hand delivered to tenant
         <br> ( ) Leaving a copy at the premises<br>
