@@ -1,4 +1,5 @@
-@extends ('layouts/app') 
+{{--  Properties@Edit  --}}
+@extends ('layouts.app') 
 @section ('content')
 <div class='container'>
     {{--  Shows current property information for reference  --}}

@@ -1,8 +1,11 @@
-@extends ('layouts/app') 
+{{--  Properties@Show  --}}
+@extends ('layouts.app') 
 @section ('content')
 <div class='container'>
+    {{--  Header  --}}
     <h2>{{$property->addr}}</h2>
     <hr>
+    {{--  Property Information  --}}
     <b>Community: </b>{{$property->community}}<br>
     <b>Addr: </b>{{$property->addr}}<br>
     <b>Addr2: </b>{{$property->addr2}}<br>
@@ -10,7 +13,8 @@
     <b>State: </b> {{$property->state}}<br>
     <b>Zip: </b> {{$property->zip}}<br>
     <hr>
-    <b>Tenant: </b><br>
+    {{--  Tenant Information  --}}
+    <b>Tenant: </b>{{--Tenant Info Here--}}<br>
     <b>Lease Date: </b> {{$property->lease_date}}<br>
     <b>Rent: </b> ${{$property->rent}}<br>
     <br>

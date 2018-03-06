@@ -1,13 +1,7 @@
-@extends('layouts/app') 
+{{--  Properties@Create  --}}
+@extends('layouts.app') 
 @section('content')
     <div class="container">
-       This is a badge
-        <span class="badge">8</span>
-
-        <div class="chip">
-            <img src="" alt=""/>
-            Chip
-        </div>
-
+       <p>This is where the create form will go...</p>
     </div>
 @endsection

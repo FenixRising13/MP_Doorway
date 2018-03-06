@@ -25,6 +25,8 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
+
+// Form Routes
 Route::get('/forms', function () {
   return view('forms');
 });

@@ -1,12 +1,15 @@
-@extends ("layouts.app") 
-@section("content")
-<div class="container">
+{{--  Properties@Index  --}}
+@extends ('layouts.app') 
+@section('content')
+<div class='container'>
+    {{--  Header  --}}
     <h2>Properties</h2>
     <hr>
+    {{--  Collection of Properties  --}}
     @foreach ( $properties as $property )
     <ul class="collection">
         <li class="collection-item">
-            <a href="/properties/{{$property->property_id}}" class="link">{{$property->addr}}</a>
+            <a href="/properties/{{$property->id}}" class="link">{{$property->addr}}</a>
         </li>
     </ul>
     @endforeach
