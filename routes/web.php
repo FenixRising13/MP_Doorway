@@ -25,7 +25,7 @@ Route::resource('/properties',"PropertiesController");
 
 Route::resource('/repairs',"RepairsController");
 
-Route::resource('/history',"HistoryController");
+Route::resource('/history',"HistoriesController");
 
 Auth::routes();
 
