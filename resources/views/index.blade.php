@@ -28,7 +28,7 @@
         <a href="/properties" class="link">Properties</a><br>
         <a href="/repairs" class="link">Repair Tickets</a><br>
         <a href="/forms" class="link">Forms</a><br>
-        <a href="/histories/create" class="link">Log Rents</a><br>
+        <a href="/histories" class="link">Log Rents</a><br>
     </div>
 </div>
 @endsection
