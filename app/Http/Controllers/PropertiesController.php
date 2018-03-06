@@ -51,7 +51,7 @@ class PropertiesController extends Controller
     {
         $property = Property::find($id);
         return view('properties.show')
-        ->with(['property'=>$property])->select('name');
+        ->with(['property'=>$property]);
     }
 
     /**
