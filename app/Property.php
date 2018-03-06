@@ -16,6 +16,6 @@ class Property extends Model
 
     public function repair()
     {
-        return $this->hasMany('App\Repair');
+        return $this->hasMany('App\Repair', 'id', 'property_id');
     }
 }
