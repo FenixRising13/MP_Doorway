@@ -1,16 +1,16 @@
 @extends ('layouts.app')
 @section ('content')
 <div class="container">
-    @foreach ($history as $history)
+    @foreach ($histories as $history)
         <ul class='collection'>
             <li class='collection-item'>
-                {{$id}}
+                {{$history->$id}}
             </li>
             <li class='collection-item'>
-                {{$property_id}}
+                {{$history->$property_id}}
             </li>
             <li class='collection-item'>
-                {{$description}}
+                {{$history->$description}}
             </li>
         </ul>
     @endforeach
