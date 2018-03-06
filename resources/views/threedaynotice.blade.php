@@ -36,7 +36,9 @@
         <p>( ) Hand delivered to tenant</p>
         <p>( ) Leaving a copy at the premises</p>
         <br>
-        <br> ___________________________ Signature
+        <br> ___________________________
+        <br>
+        Signature
     </div>
 </div>
 @endsection
