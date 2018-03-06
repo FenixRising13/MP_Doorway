@@ -14,7 +14,7 @@
     <b>Zip: </b> {{$property->zip}}<br>
     <hr>
     {{--  Tenant Information  --}}
-    <b>Tenant: </b>{{--Tenant Info Here--}}<br>
+    <b>Tenant: </b>{{$property->tenant}}<br>
     <b>Lease Date: </b> {{$property->lease_date}}<br>
     <b>Rent: </b> ${{$property->rent}}<br>
     <br>
