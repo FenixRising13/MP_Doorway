@@ -12,6 +12,10 @@
 */
 
 Route::get('/', function () {
+    return view('dashboard');
+});
+
+Route::get('/index', function(){
     return view('index');
 });
 
