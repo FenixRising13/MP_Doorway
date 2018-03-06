@@ -77,10 +77,10 @@ class PropertiesController extends Controller
     public function update(Request $request, $id)
     {
         $property = Property::find($id);
-        if (strlen($property->lease_date)!==0){
+        if (strlen($request->lease_date)!==0){
             $property->lease_date = $request->lease_date;
         }
-        if (strlen($property->rent)!==0){
+        if (strlen($request->rent)!==0){
             $property->rent = $request->rent;
         }
         $property->save();
