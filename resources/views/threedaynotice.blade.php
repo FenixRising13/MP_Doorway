@@ -25,11 +25,12 @@
         <p>Please submit the total amount due to this address:</p>
         Larry Powalisz 1375 State Road 436 Casselberry, FL 32707 321-231-2843 Failure to pay the total amount noted on the above
         late rent notice may result in further actions being taken, but not limited to eviction.
+        <br>
         <p>Sincerely,</p>
-        <p>Larry Powalisz,</p>
+        <p>_________________</p>
         <p>Landlord</p>
-        I hereby certify that a copy of the following Notice was served upon the above named tenant(s) at the above address on the
-        following date: (month/day/year) ________________________________ by the following means:
+        <br>
+        <p>I hereby certify that a copy of the following Notice was served upon the above named tenant(s) at the above address on the following date: (month/day/year) ________________________________ by the following means:</p>
         <br>
         <p>( ) Certified Mail - Return Receipt Requested</p>
         <p>( ) Hand delivered to tenant</p>
