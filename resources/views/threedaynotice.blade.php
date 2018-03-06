@@ -4,19 +4,19 @@
 <div class="container">
     <div class="form">
         {{-- Heading --}}
-        <h5>Three-day Notice to Tenant</h5><br>
+        <h5>Three-day Notice to Tenant</h5>
         <h5>Demand for Payment or Possession</h5>
 
-        <b>Florida Statutes 83.56</b>
+        <b style='text-align:center'>Florida Statutes 83.56</b>
         <br>
-        <p>Seminole County, Florida</p> <p>November 13, 2012</p>
+        <p style='text-align:left'>Seminole County, Florida</p> <p style='text-align:right'>November 13, 2012</p>
         <br>
         <p>Tenant</p>
         <p>Address</p>
         <p>City State Zip</p>
         <br>
-        Mr. Garcia, This notice is to inform you that we have not received your rent payment for November 2012, which was
-        due by November 5, 2012 by 5:00PM. This was for rental period of November 1, 2012 to November 30, 2012. You are hereby
+        Mr/Mrs. _________________, This notice is to inform you that we have not received your rent payment for ___________________, which was
+        due by ____________________ by _________. This was for rental period of ____________________ to ____________________. You are hereby
         notified that you are indebted to me, as of today, $1,112.86 for the rent and use of the premises noted above. Per
         your lease agreement, you have been assessed a $210.00 late fee charge at $30.00 per day and still owe the remaining
         balance of $102.86 for the outstanding electric bill, which is included in the above amount due. I demand payment
