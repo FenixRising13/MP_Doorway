@@ -1,9 +1,9 @@
+{{--  Late Rent Notice Form  --}}
 @extends('layouts.app') 
 @section('content')
 <div class="container">
     <div class="form">
-        <h3>Late Rent Notice</h3>
-        {{-- {{$Date??}} --}} {{-- <br> --}} {{-- {{$property->tenant}}<br> --}} {{-- {{$property->addr}}<br> --}} {{-- {{$property->addr2}}<br>        --}} {{-- {{$property->city}}{{$property->state}}{{$property->zip}} --}}
+        <h5>Late Rent Notice</h5>
         <p>Date</p>
         <br>
         <p>Tenant</p>

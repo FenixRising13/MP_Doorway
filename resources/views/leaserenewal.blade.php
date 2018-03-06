@@ -1,8 +1,10 @@
+{{--  Notice of Lease Expiration  --}}
 @extends('layouts.app') 
 @section('content')
 <div class="container">
     <div class="form">
-        <h3>LEASE EXPIRATION/VACATING TENANT LETTER</h3>
+        {{--  Heading  --}}
+        <h5>LEASE EXPIRATION/VACATING TENANT LETTER</h5>
         <br>
         <p>Date</p>
         <br>
