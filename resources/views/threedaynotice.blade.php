@@ -9,8 +9,8 @@
         <br>
         <h6 style='text-align:center;font-weight:bold;'> Florida Statutes 83.56</h6>
         <br>
-        <p style='text-align:left'>County, Florida</p>
-        <p style='text-align:right'>Date</p>
+        County, Florida<br>
+        Date<br>
         <br> Tenant
         <br> Address
         <br> City State Zip<br>
