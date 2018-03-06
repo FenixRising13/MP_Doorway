@@ -34,7 +34,7 @@ class RepairsController extends Controller
      */
     public function create()
     {
-        return view('repairs.create',compact('repairs'));
+        return view('repairs.create');
     }
 
     /**

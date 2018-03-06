@@ -25,6 +25,8 @@ Route::resource('/properties',"PropertiesController");
 
 Route::resource('/repairs',"RepairsController");
 
+Route::resource('/history',"HistoryController");
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index');
@@ -49,8 +51,4 @@ Route::get('/changeaddress', function () {
 
 Route::get('/threedaynotice', function () {
   return view('threedaynotice');
-});
-
-Route::get('/rentalhistory', function () {
-  return view('rentalhistory');
 });
