@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 use App\History;
 
-class HistoryController extends Controller
+class HistoriesController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,8 +15,8 @@ class HistoryController extends Controller
      */
     public function index()
     {
-        $history = History::all();
-        return view('history.index',compact('history'));
+        $histories = History::all();
+        return view('histories.index',compact('histories'));
     }
 
     /**
@@ -26,7 +26,7 @@ class HistoryController extends Controller
      */
     public function create()
     {
-        return view('history.create');
+        return view('histories.create');
     }
 
     /**
