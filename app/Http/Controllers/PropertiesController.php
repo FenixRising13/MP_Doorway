@@ -47,9 +47,9 @@ class PropertiesController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($property_id)
+    public function show($id)
     {
-        $property = Property::find($property_id);
+        $property = Property::find($id);
         return view('properties.show')
         ->with(['property'=>$property]);
     }
@@ -57,13 +57,13 @@ class PropertiesController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $property_id
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($property_id)
+    public function edit($id)
     {
         {
-        return view('properties.edit')->withProperty(Property::find($property_id));
+        return view('properties.edit')->withProperty(Property::find($id));
         }
     }
 
@@ -71,12 +71,12 @@ class PropertiesController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  int  $property_id
+     * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $property_id)
+    public function update(Request $request, $id)
     {
-        $property = Property::find($property_id);
+        $property = Property::find($id);
         if (strlen($property->tenant)!==0){
             $property->tenant = $request->tenant;
         }
@@ -84,7 +84,7 @@ class PropertiesController extends Controller
             $property->rent = $request->rent;
         }
         $property->save();
-        return redirect()->action('PropertiesController@show',[$property_id]); 
+        return redirect()->action('PropertiesController@show',[$id]); 
     }
 
     /**
@@ -93,7 +93,7 @@ class PropertiesController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($property_id)
+    public function destroy($id)
     {
         //
     }
