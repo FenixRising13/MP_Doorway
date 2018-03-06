@@ -25,8 +25,6 @@ class CreatePropertiesTable extends Migration
             $table->boolean("rented");
             $table->decimal("rent");
             $table->integer("grace");
-            $table->integer("tenant")->unsigned();
-            $table->foreign("tenant")->references('id')->on('users');
             $table->timestamps();
         });
     }
