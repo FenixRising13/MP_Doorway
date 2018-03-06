@@ -3,8 +3,7 @@
     <form method:"POST" action="/history/store">
             {{ csrf_field() }} {{ method_field('PATCH') }}
         <div class="input-field col s12 l6">
-            <input type="date" id="received" class="validate">
-            <label for="received">Date Received</label>
+            <input type="date" id="received" class="validate" placeholder='Date Received'>
         </div>
         {{-- This should be a dropdown to select a property --}}
         <div class="input-field col s12 l6">
