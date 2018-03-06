@@ -18,6 +18,9 @@
             <input type="text" id="rent" class="validate">
             <label for="rent">Rent</label>
         </div>
+        <button class="waves-effect waves-light grey btn" id=submit>
+            Submit
+          </button>
     </form>
 </div>
 @endsection

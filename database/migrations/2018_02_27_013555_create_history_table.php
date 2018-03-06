@@ -21,6 +21,8 @@ class CreateHistoryTable extends Migration
             $table->integer("property_id")->unsigned();
             $table->foreign("property_id")->references('id')->on('properties');
             $table->string("description");
+            $table->decimal("rent");
+            $table->date("received");
             $table->timestamps();
         });
     }
