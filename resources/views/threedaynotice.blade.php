@@ -4,9 +4,9 @@
 <div class="container">
     <div class="form">
         {{-- Heading --}}
-        <h5>Three-Day Notice to Tenant</h5>
-        <h5>Demand for Payment or Possession</h5>
-        <b id='statute'> Florida Statutes 83.56</b>
+        <h5 style='text-align:center'>Three-Day Notice to Tenant</h5>
+        <h5 style='text-align:center'>Demand for Payment or Possession</h5>
+        <b id='statute' style='text-align:center'> Florida Statutes 83.56</b>
         <br>
         <p style='text-align:left'>County, Florida</p>
         <p style='text-align:right'>Date</p>
@@ -19,8 +19,7 @@
             which was due by ____________________ by _________. This was for the rental period of ____________________ to
             ____________________. You are hereby notified that you are indebted to me, as of today, $___________ for the
             rent and use of the premises noted above. Per your lease agreement, you have been assessed a $__________ late
-            fee charge at $_________ per day and still owe the remaining balance of $102.86 for the outstanding electric
-            bill, which is included in the above amount due. I demand payment of rent in full or possession of the premises
+            fee charge at $_________ per day. I demand payment of rent in full or possession of the premises
             within three (3) days (excluding Saturday, Sunday, and legal holidays) from the date of delivery of this notice.</p>
         <p>Please submit the total amount due to this address:</p>
         <p>Company</p>
