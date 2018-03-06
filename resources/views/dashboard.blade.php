@@ -15,6 +15,7 @@
                     @endif
 
                     You are logged in!
+                    <a href="/" class='btn gray'>Go Home</a>
                 </div>
             </div>
         </div>
