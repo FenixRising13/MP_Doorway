@@ -23,22 +23,25 @@
             bill, which is included in the above amount due. I demand payment of rent in full or possession of the premises
             within three (3) days (excluding Saturday, Sunday, and legal holidays) from the date of delivery of this notice.</p>
         <p>Please submit the total amount due to this address:</p>
-        Larry Powalisz 1375 State Road 436 Casselberry, FL 32707 321-231-2843 Failure to pay the total amount noted on the above
-        late rent notice may result in further actions being taken, but not limited to eviction.
+        <p>Company</p>
+        <p>Addr</p>
+        <p>City, State, Zip</p>
+        <p>Failure to pay the total amount noted on the above late rent notice may result in further actions being taken, but
+            not limited to eviction.</p>
         <br>
         <p>Sincerely,</p>
         <p>_________________</p>
         <p>Landlord</p>
         <br>
-        <p>I hereby certify that a copy of the following Notice was served upon the above named tenant(s) at the above address on the following date: (month/day/year) ________________________________ by the following means:</p>
+        <p>I hereby certify that a copy of the following Notice was served upon the above named tenant(s) at the above address
+            on the following date: (month/day/year) ________________________________ by the following means:</p>
         <br>
         <p>( ) Certified Mail - Return Receipt Requested</p>
         <p>( ) Hand delivered to tenant</p>
         <p>( ) Leaving a copy at the premises</p>
         <br>
         <br> ___________________________
-        <br>
-        Signature
+        <br> Signature
     </div>
 </div>
 @endsection

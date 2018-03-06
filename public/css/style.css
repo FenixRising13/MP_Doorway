@@ -8,11 +8,6 @@ body {
     text-shadow: 1px 1px;
   }
 
-  h5 {
-    margin:0;
-    align-items: center;
-  }
-
   .navbar-brand {
     font-size: 30px;
   }
@@ -56,7 +51,4 @@ body {
     text-align: justify;
   }
 
-  #statute {
-    margin: 0;
-    align-items: center;
-  }
+ 
