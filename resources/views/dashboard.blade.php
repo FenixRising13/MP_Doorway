@@ -15,7 +15,7 @@
                     @endif
 
                     You are logged in!
-                    <a href="/" class='btn gray'>Go Home</a>
+                    <a href="/" class='btn btn-grey'>Go Home</a>
                 </div>
             </div>
         </div>
