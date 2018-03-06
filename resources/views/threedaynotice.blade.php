@@ -11,9 +11,9 @@
         <p style='text-align:left'>County, Florida</p>
         <p style='text-align:right'>Date</p>
         <br>
-        <p>Tenant</p>
-        <p>Address</p>
-        <p>City State Zip</p>
+        Tenant<br>
+        Address<br>
+        City State Zip<br>
         <br>
         <p>Mr/Mrs. _________________, This notice is to inform you that we have not received your rent payment for ___________________,
             which was due by ____________________ by _________. This was for the rental period of ____________________ to
@@ -22,9 +22,9 @@
             fee charge at $_________ per day. I demand payment of rent in full or possession of the premises
             within three (3) days (excluding Saturday, Sunday, and legal holidays) from the date of delivery of this notice.</p>
         <p>Please submit the total amount due to this address:</p>
-        <p>Company</p>
-        <p>Addr</p>
-        <p>City, State, Zip</p>
+        Company<br>
+        Addr<br>
+        City, State, Zip<br>
         <p>Failure to pay the total amount noted on the above late rent notice may result in further actions being taken, but
             not limited to eviction.</p>
         <br>
