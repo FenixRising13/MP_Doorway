@@ -27,7 +27,7 @@ Route::resource('/repairs',"RepairsController");
 
 Auth::routes();
 
-Route::get('/dashboard', 'DashboardController@index');
+Route::get('/home', 'HomeController@index');
 
 
 // Form Routes
