@@ -6,9 +6,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class Repair extends Model
 {
-    public function property_id()
+    public function property()
     {
-        return $this->hasOne('App\Property');
+        return $this->hasOne('App\Property', 'id', 'property_id');
     }
 
     public function user()
