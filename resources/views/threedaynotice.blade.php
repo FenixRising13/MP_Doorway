@@ -8,8 +8,8 @@
         <h5>Demand for Payment or Possession</h5>
         <b id='statute'> Florida Statutes 83.56</b>
         <br>
-        <p style='text-align:left'>Seminole County, Florida</p>
-        <p style='text-align:right'>November 13, 2012</p>
+        <p style='text-align:left'>County, Florida</p>
+        <p style='text-align:right'>Date</p>
         <br>
         <p>Tenant</p>
         <p>Address</p>
