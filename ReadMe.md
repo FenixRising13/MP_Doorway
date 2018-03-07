@@ -1,11 +1,19 @@
 # MP Doorway
 
+## Description
+Managed Property "MP" Doorway was designed to be a white labeled property management software for any type of property manager for apartment complexes, investment firms or private investors.
+
+## Need
+As a property manager for eleven (11) units I've found that spreadsheets were not the best way to track expiring leases or repair history. MP Doorway is designed to address these issues and any new issues that may arise. Scalability and the understanding that any real project is never finished is the key.
+
 ## Items to Cover
 * Lease Expiry - Setup notifications for tenant renewals
-* Rents Received - Can be exported for a verification of rent 
-* Grace Period - When should rent be received? When should late notice by provided?
+* Rents Received - Can be exported for a verification of rent
+* Grace Period - When should rent be received? When should a late notice be provided?
 * Tenant - Repair Requests
-* Payment Portal?
+
+## Nice to Haves
+* Payment Portal for tenants
 * Foreclosure Scraper?
 
 ## Database Structure
@@ -61,15 +69,11 @@
 * ClearDB - https://www.cleardb.com/
 
 ## Pages
-
 * Users (CRUD)
 * Properties (CRUD)
 * Repairs (CRUD)
 * Forms
 * Rental History
-
-<!-- ## APIs
-Google Maps API -->
 
 ![MP Doorway](mpdoorway.gif)
 
