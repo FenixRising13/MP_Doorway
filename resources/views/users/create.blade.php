@@ -4,7 +4,7 @@
 <div class='container'>
     <h2>Create A User</h2>
     <hr>
-    <form action="" method="POST">
+    <form action="/users" method="POST">
             {{ csrf_field() }} {{ method_field('PATCH') }}
             <div class="input-field col s12 l6">
                 <input name="name" type="text" id="name" class="validate" placeholder="New Name">
@@ -21,6 +21,10 @@
             <div class="input-field col s12">
                 <input name="phone" type="text" id="phone" class="validate" placeholder="New Phone">
                 <label for="phone"></label>
+            </div>
+            <div class="input-field col s12">
+                <input name="property_id" type="number" id="property_id" class="validate" placeholder="New Property ID">
+                <label for="property_id"></label>
             </div>
             <button class='btn grey' id=submit>
                     Submit
