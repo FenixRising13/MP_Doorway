@@ -13,5 +13,9 @@
         </li>
     </ul>
     @endforeach
+
+    <button class="waves-effect waves-light grey btn" onclick="location.href = '/properties/create';">
+        Add New Property
+    </button>
 </div>
 @endsection
