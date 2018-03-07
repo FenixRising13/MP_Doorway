@@ -5,7 +5,7 @@
     <h2>Create A User</h2>
     <hr>
     <form action="/users" method="POST">
-            {{ csrf_field() }} {{ method_field('PATCH') }}
+            {{ csrf_field() }} {{ method_field('POST') }}
             <div class="input-field col s12 l6">
                 <input name="name" type="text" id="name" class="validate" placeholder="New Name">
                 <label for="name"></label>
