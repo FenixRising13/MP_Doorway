@@ -60,14 +60,6 @@ As a property manager for eleven (11) units I've found that spreadsheets were no
     * Property_ID
     * Timestamps
 
-## Technologies
-* MySQL - https://www.mysql.com/
-* PHP - http://www.php.net/
-* Laravel - https://laravel.com/
-* MaterializeCSS - https://www.materializecss.com/
-* Heroku - https://www.heroku.com/
-* ClearDB - https://www.cleardb.com/
-
 ## Pages
 * Users (CRUD)
 * Properties (CRUD)
