@@ -19,6 +19,7 @@
     * Password
     * Title - Manager / Tenant / Handyman(Contractor)
     * Property_ID
+    * Timestamps
 
   * Properties (10-100 records)
     * Property_ID
@@ -33,6 +34,7 @@
     * Rent
     * Renter (Boolean)
     * Grace Period
+    * Timestamps
 
   * Repairs
     * Property_ID
@@ -40,14 +42,23 @@
     * Completed
     * Completed_At
     * Contractor
+    * Timestamps
 
-  * History
+  * Histories
+    * Description
+    * Rent
+    * Date Received
+    * User_ID
+    * Property_ID
+    * Timestamps
 
 ## Technologies
 * MySQL - https://www.mysql.com/
-* PHP
-* Laravel
-* MaterializeCSS - http://materializecss.com/
+* PHP - http://www.php.net/
+* Laravel - https://laravel.com/
+* MaterializeCSS - https://www.materializecss.com/
+* Heroku - https://www.heroku.com/
+* ClearDB - https://www.cleardb.com/
 
 ## Pages
 
