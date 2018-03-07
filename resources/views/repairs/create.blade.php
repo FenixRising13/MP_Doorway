@@ -6,7 +6,7 @@
     <form action="/repairs" method="POST">
         {{ csrf_field() }} {{ method_field('POST') }}
         <div class="input-field col s12 l6">
-            <input type="text" id="property_id" class="validate" placeholder="Property ID">
+            <input type="number" id="property_id" class="validate" placeholder="Property ID">
             <label for="property_id"></label>
         </div>
         <div class="input-field col s12 l6">
