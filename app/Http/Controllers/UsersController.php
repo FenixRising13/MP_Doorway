@@ -39,25 +39,17 @@ class UsersController extends Controller
     public function store(Request $request)
     {
         {
-            if (strlen($request->name)!==0){
-                $user->name = $request->name;
-            }
-            if (strlen($request->email)!==0){
-                $user->email = $request->email;
-            }
-            if (strlen($request->title)!==0){
-                $user->title = $request->title;
-            }
-            if (strlen($request->phone)!==0){
-                $user->phone = $request->phone;
-            }
-            if (strlen($request->property_id)!==0){
-                $user->property_id = $request->property_id;
-            }
-
-            $user->save();
-            // Save history with updated_at
-            return redirect()->action('UsersController@index'); 
+            $request->validate([
+                'name' => 'required|min,3',
+                'email' => 'required',
+                'password' => 'required|6',
+                'phone',
+                'title',
+                'property_id',
+            ]);
+            
+            $user = User::create(['name' => $request->name, 'email' => $request->email, 'password' => $request->password, 'phone' => $request->phone, 'title' => $request->title,'property_id' => $request->property_id, '']);
+            return redirect('/users/'.$user->id);
         }
     
     }
