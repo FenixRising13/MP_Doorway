@@ -40,9 +40,9 @@ class UsersController extends Controller
     {
         {
             $request->validate([
-                'name' => 'required|min,3',
+                'name' => 'required',
                 'email' => 'required',
-                'password' => 'required|6',
+                'password' => 'required',
                 'phone',
                 'title',
                 'property_id',
