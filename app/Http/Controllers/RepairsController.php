@@ -46,13 +46,14 @@ class RepairsController extends Controller
     public function store(Request $request)
     {
 
-        if ($request->property_id!==0){
-            $repair->property_id = $request->property_id;
-            $repair->description = $repair->description;
-
-            $repair->save();
-        }
-        return redirect()->action('RepairsController@index');
+        $request->validate([
+            'property_id' => 'required',
+            'description' => 'required',
+            
+        ]);
+        
+        $Repair = Repair::create(['property_id' => $request->property_id, 'description' => $request->description]);
+        return redirect('/repairs/'.$repair->id);
     }
 
     /**
