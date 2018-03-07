@@ -15,6 +15,10 @@
                 <label for="email" data-error="wrong" data-success="right"></label>
             </div>
             <div class="input-field col s12">
+                <input name="password" type="password" id="password" class="validate" placeholder="New Password">
+                <label for="password"></label>
+            </div>
+            <div class="input-field col s12">
                 <input name="title" type="text" id="title" class="validate" placeholder="New Title">
                 <label for="title"></label>
             </div>
