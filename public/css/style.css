@@ -4,10 +4,6 @@ body {
     flex-direction: column;
   }
 
-  h2 {
-    text-shadow: 1px 1px;
-  }
-
   .navbar-brand {
     font-size: 30px;
   }
