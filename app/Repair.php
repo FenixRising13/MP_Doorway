@@ -6,6 +6,13 @@ use Illuminate\Database\Eloquent\Model;
 
 class Repair extends Model
 {
+
+    // * @var array
+    //  */
+    protected $fillable = [
+        'property_id', 'description', 'completed', 'completed_at', 'contractor'
+    ];
+
     protected $table="repairs";
 
     public function property()

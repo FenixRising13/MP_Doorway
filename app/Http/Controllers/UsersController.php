@@ -48,7 +48,7 @@ class UsersController extends Controller
                 'property_id',
             ]);
             
-            $user = User::create(['name' => $request->name, 'email' => $request->email, 'password' => $request->password, 'phone' => $request->phone, 'title' => $request->title,'property_id' => $request->property_id, '']);
+            $user = User::create(['name' => $request->name, 'email' => $request->email, 'password' => $request->password, 'phone' => $request->phone, 'title' => $request->title,'property_id' => $request->property_id,]);
             return redirect('/users/'.$user->id);
         }
     
