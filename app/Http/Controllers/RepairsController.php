@@ -52,7 +52,7 @@ class RepairsController extends Controller
             
         ]);
         
-        $Repair = Repair::create(['property_id' => $request->property_id, 'description' => $request->description]);
+        $repair = Repair::create(['property_id' => $request->property_id, 'description' => $request->description]);
         return redirect('/repairs/'.$repair->id);
     }
 
