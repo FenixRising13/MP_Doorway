@@ -32,23 +32,23 @@ Auth::routes();
 Route::get('/home', 'HomeController@index');
 
 
-// Form Routes
+// Form Routes // Added middleware auth 9/25
 Route::get('/forms', function () {
   return view('forms');
-});
+})->middleware('auth');
 
 Route::get('/laterent', function () {
   return view('laterent');
-});
+})->middleware('auth');
 
 Route::get('/leaserenewal', function () {
   return view('leaserenewal');
-});
+})->middleware('auth');
 
 Route::get('/changeaddress', function () {
   return view('changeaddress');
-});
+})->middleware('auth');
 
 Route::get('/threedaynotice', function () {
   return view('threedaynotice');
-});
+})->middleware('auth');
