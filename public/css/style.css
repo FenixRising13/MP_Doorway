@@ -1,50 +1,49 @@
 body {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-  }
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
 
-  .navbar-brand {
-    font-size: 30px;
-  }
+.navbar-brand {
+  font-size: 30px;
+}
 
-  main {
-    flex: 1 0 auto;
-  }
+main {
+  flex: 1 0 auto;
+}
 
-  .list-group {
-    border: 2px solid black;
-    padding: 10px;
-  }
+.list-group {
+  border: 2px solid black;
+  border-radius: 15px;
+  padding: 10px;
+}
 
-  .list-item {
-    margin-left: 10px;
-  }
+.list-item {
+  margin-left: 10px;
+}
 
-  footer {
-    height: 50px;
-    padding-top: 15px;
-    background: black;
-    color: white;
-    text-align: center;
-  }
+footer {
+  height: 50px;
+  padding-top: 15px;
+  background: black;
+  color: white;
+  text-align: center;
+}
 
-  .card {
-    border: 1px solid black;
-  }
+.card {
+  border: 1px solid black;
+}
 
-  .link {
-    color: black;
-    font-size: 18px;
-    font-weight:bold;
-  }
+.link {
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+}
 
-  #description {
-    font-size:16px;
-  }
+#description {
+  font-size: 16px;
+}
 
-  .form {
-    text-align: justify;
-  }
-
- 
+.form {
+  text-align: justify;
+}
